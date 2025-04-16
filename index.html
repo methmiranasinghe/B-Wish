@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Birthday Panchooo 🎂</title>
+    <style>
+        body {
+            background: #fff0f5;
+            font-family: 'Comic Sans MS', cursive;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        h1 {
+            color: #e91e63;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        #wish {
+            display: none;
+            font-size: 1.1rem;
+            margin-top: 20px;
+            color: #333;
+            max-width: 600px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+        }
+
+        .heart {
+            color: red;
+            animation: float 2s infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        #hints {
+            margin-top: 20px;
+            font-size: 1rem;
+            color: #333;
+            background: #e91e63;
+            padding: 10px;
+            border-radius: 10px;
+            max-width: 300px;
+            margin-bottom: 20px;
+        }
+
+        #hints ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        #hints li {
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        input[type="password"] {
+            padding: 15px;
+            font-size: 1.2rem;
+            border-radius: 8px;
+            border: 2px solid #e91e63;
+            outline: none;
+            width: 300px;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        input[type="password"]:focus {
+            border-color: #f44336;
+            box-shadow: 0 0 5px rgba(244, 67, 54, 0.6);
+        }
+
+        button {
+            padding: 12px 30px;
+            font-size: 1.2rem;
+            background-color: #e91e63;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #f44336;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>💘 Secret Birthday Wish 💘</h1>
+    <p>Only someone *very* special can unlock this... 💭</p>
+
+    <input type="password" id="code" placeholder="Enter the secret code 💌" />
+    <button onclick="unlockWish()">Unlock</button>
+
+    <div id="hints">
+        <ul>
+            <li>1️⃣ It may be a color one of us likes 🌈💖</li>
+            <li>2️⃣ It may be a combination of our nicknames 🐼💖</li>
+            <li>3️⃣ It may be the nickname of the child we're going to have 👶💞</li>
+            <li>4️⃣ It may be the number of days since we first met until now 🗓️</li>
+        </ul>
+    </div>
+
+    <div id="wish">
+        <p>Happy Birthday, Mage Panchoooo 🐼💖🎂
+            <br><br>
+        Today you’ve turned 26 years old, but you’ll always be my baby 🥺💗. I’ll protect you no matter what life throws at us,
+        and I truly wish this year brings you all the happiness, success, and achievements you’ve ever wished for 🌟🎉.
+        I want every moment of your life to be filled with laughter, joy, and unforgettable memories. I promise to always bring
+        you happy tears, be your biggest strength, and stay by your side through every chapter. I can’t even put into words how
+        grateful I am to have you in my life 😭💓.
+        Even though we’ve had our ups and downs, we always find our way back to each other ,that’s how strong our love is 💞. I
+        feel so lucky to be yours and to walk this journey with you until my last breath 🫶🏼.
+        Let’s create our own little adventure together, filled with laughter and love 💫. And even when we face hard times,
+        we’ll go through them hand in hand—stronger than ever. I’ll never let go of your hand, and I’ll cherish you with all the
+        happiness this world can give 💋💗.
+        So take my hand, pattoo let’s walk through this life side by side. I’ll take care of you, no matter what, even if it
+        means giving my last breath for you 😘💞.
+        <b>Mage pana mama oyata godakkk adareii 😘💖.</b> I’ll be there for you in every up and down, never letting go, never letting
+        life bring you down. I believe we’re meant for each other, and no matter what comes our way, we’ll grow stronger and
+        stronger. That’s how powerful our love is. 💑💫
+        <br><br>
+        So on this special day, I wish you endless success, love, laughter, and every bit of happiness you deserve 🎈🎁. You
+        mean the world to me, and I can’t wait to celebrate every birthday with you until our last breath 🌍💓.
+            <br><br>
+            Love always, <br>💖 Your Panchii🐿️😘💓
+        </p>
+    </div>
+
+    <script>
+        function unlockWish() {
+            const code = document.getElementById('code').value;
+            if (code === "1234days") { // Replace with your actual passcode
+                document.getElementById('wish').style.display = 'block';
+            } else {
+                alert("Oops! Wrong code 💔 Try again, My Cutiee😘❤️🌍!");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
